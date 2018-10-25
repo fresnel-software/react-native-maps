@@ -287,6 +287,7 @@ public class AirMapMarker extends AirMapFeature {
     }
     if (marker != null) {
       marker.setIcon(getIcon());
+      hasViewChanges = true;
     }
   }
 
