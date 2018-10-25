@@ -20,7 +20,8 @@ public class ViewAttacherGroup extends ReactViewGroup {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
       this.setClipBounds(new Rect(0, 0, 0, 0));
     }
-    this.setOverflow("hidden"); // Change to ViewProps.HIDDEN until RN 0.57 is base
+    // RN 0.48 Hack
+    //  this.setOverflow("hidden"); // Change to ViewProps.HIDDEN until RN 0.57 is base
   }
 
   // This should make it more performant, avoid trying to hard to overlap layers with opacity.
